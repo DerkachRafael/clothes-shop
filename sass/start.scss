@@ -1,0 +1,44 @@
+@import "vars";
+@import "base";
+@import "header";
+@import "slider";
+
+.b-banner {
+  display: flex;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 130px;
+  &__item {
+    position: relative;
+    flex: 2;
+    align-self: center;
+    font-size: 0;
+    &:first-of-type{
+      border-right: 1px solid $border-color;
+    }
+    &--bg {
+      background-color: #f7f7f7;
+    }
+  }
+}
+
+.banner-description {
+  position: absolute;
+  top: 35px;
+  right: 100px;
+  &__title {
+    font-size: 30px;
+  }
+  p {
+    color: #757575;
+    font-family: Times;
+    font-size: 16px;
+    font-style: italic;
+  }
+}
+.b-product{
+  .row{
+    justify-content: space-between;
+  }
+}
+@import "footer";
+@import "media";

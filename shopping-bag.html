@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bag</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/shopping-bag.css">
+</head>
+<body class="cart-page">
+<header class="header">
+    <div class="container">
+        <div class="top-panel">
+            <div class="logo">
+                <a href="index.html" class="logo__link" title="Template">T<span>emp</span>l<span>ate</span></a>
+            </div>
+            <ul class="login-list">
+                <li class="login-list__item hidden-xs"><a class="login-list__link " href="#0">E-mail</a></li>
+                <li class="login-list__item hidden-xs"><a class="login-list__link " href="#0">sing up</a></li>
+                <li class="login-list__item"><a class="login-list__link" href="shopping-bag.html">
+                    <svg class="login-list__svg">
+                        <use xlink:href="img/svg-sprite.svg#shopping-purse-icon"></use>
+                    </svg>
+                    Bag</a>
+                </li>
+            </ul>
+            <div class="nav-btn visible-xs js-nav-btn">
+                <div class="nav-btn__bar"></div>
+            </div>
+
+            <!--NAV-->
+            <nav class="nav">
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#0" class="nav__link">Women</a></li>
+                    <li class="nav__item"><a href="#0" class="nav__link">Men</a></li>
+                    <li class="nav__item"><a href="#0" class="nav__link">Handbags</a></li>
+                    <li class="nav__item"><a href="#0" class="nav__link">Accessories</a></li>
+                    <li class="nav__item"><a href="#0" class="nav__link">Sale</a></li>
+                    <li class="nav__item"><a href="#0" class="nav__link">New Arrivals</a></li>
+                    <li class="nav__item"><a href="#0" class="nav__link">Clearance</a></li>
+                    <li class="nav__item"><a href="#0" class="nav__link">Store Locator</a></li>
+                </ul>
+                <form class="search-form" action="#0">
+                    <input class="search-form__input" placeholder="Style name"/>
+                    <button class="search-form__button" type="button"><img src="img/search-btn.svg" alt="alt"></button>
+                </form>
+            </nav>
+    </div>
+    </div>
+    <div class="intro-link">
+        <div class="container">
+            <a href=/ class="back-link">Shopping Bag</a>
+        </div>
+    </div>
+</header>
+<!--CONTENT-->
+<div class="container">
+    <p class="success-buy text-center accent" hidden> Thank you for your purchase</p>
+    <p class="empty-cart text-center accent" hidden> Your shopping bag is empty. Use Catalog to add new items</p>
+
+    <section class="content-products">
+
+        <div class="wrap-product-item">
+            <figure class="product-item">
+                <div class="wrap-product-img"><img class="product-item__img" src="img/img13.png" alt="alt"></div>
+                <figcaption class="product-description">
+                    <p class="product-description__price">£390.25</p>
+                </figcaption>
+            </figure>
+            <div class="info-product">
+                <h6 class="info-product__name">Only Skinny Jeans</h6>
+                <p class="info-product__txt">Color: Phillipa wash</p>
+                <p class="info-product__txt">Size: UK 17</p>
+                <p class="info-product__txt">Quantity: 1</p>
+                <a href="#0" class="btn-dang accent js-remove-item">Remove item</a>
+            </div>
+        </div>
+        <div class="wrap-product-item">
+            <figure class="product-item">
+                <div class="wrap-product-img"><img class="product-item__img" src="img/img1.png" alt="alt"></div>
+                <figcaption class="product-description">
+                    <p class="product-description__price">£400.75</p>
+                </figcaption>
+            </figure>
+            <div class="info-product">
+                <h6 class="info-product__name">Only Skinny Jeans</h6>
+                <p class="info-product__txt">Color: Phillipa wash</p>
+                <p class="info-product__txt">Size: UK 17</p>
+                <p class="info-product__txt">Quantity: 1</p>
+                <a href="#0" class="btn-dang accent js-remove-item">Remove item</a>
+            </div>
+        </div>
+        <!--3-->
+        <div class="wrap-product-item">
+            <figure class="product-item">
+                <div class="wrap-product-img"><img class="product-item__img" src="img/img12.png" alt="alt"></div>
+                <figcaption class="product-description">
+                    <p class="product-description__price" data-pice="849.50">£849.50</p>
+                </figcaption>
+            </figure>
+            <div class="info-product">
+                <h6 class="info-product__name">Only Skinny Jeans</h6>
+                <p class="info-product__txt">Color: Phillipa wash</p>
+                <p class="info-product__txt">Size: UK 17</p>
+                <p class="info-product__txt">Quantity: 1</p>
+                <a href="#0" class="btn-dang accent js-remove-item">Remove item</a>
+            </div>
+        </div>
+        <div class="wrap-product-item">
+            <figure class="product-item">
+                <div class="wrap-product-img"><img class="product-item__img" src="img/img4.png" alt="alt"></div>
+                <figcaption class="product-description">
+                    <p class="product-description__price" data-price="176.35">£176.35</p>
+                </figcaption>
+            </figure>
+            <div class="info-product">
+                <h6 class="info-product__name">Only Skinny Jeans</h6>
+                <p class="info-product__txt">Color: Phillipa wash</p>
+                <p class="info-product__txt">Size: UK 17</p>
+                <p class="info-product__txt">Quantity: 1</p>
+                <a href="#0" class="btn-dang accent js-remove-item">Remove item</a>
+            </div>
+        </div>
+
+        <div class="product-from-bag">
+
+        </div>
+
+    </section>
+</div>
+<section class="info-order">
+    <p class="info-order__txt text-center">You've qualified for Free UK Next Day Delivery on your order. Don't forget to
+        enter the code nex day at
+        checkout</p>
+    <div class="container">
+        <div class="bag-info">
+            <button type="button" class="clear-btn js-clear-btn">Clear bag</button>
+            <button  type="button" class="btn-medium js-btn-buy">Buy now</button>
+            <div class="b-cost">
+                <p>Total Cost</p>
+                <p class="total-price js-total-price">£1 640.50</p>
+            </div>
+            <div class="js-modal">
+                <h3 class="text-center">Are u sure?? :)</h3>
+                <div class="text-center">
+                    <button type="button" class="js-yes">Yes</button>
+                    <button type="button" class="js-no">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content row">
+            <div class="b-nav-footer">
+                <h4 class="title-sm">Quick Links</h4>
+                <ul class="b-nav-footer__list">
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Store locator</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Gift cards</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Size guide</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">About us</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Support</a></li>
+                </ul>
+            </div>
+            <div class="b-nav-footer">
+                <h4 class="title-sm">Customer Care</h4>
+                <ul class="b-nav-footer__list">
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Customer service</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Track my order</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Return policy</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Shipping & delivery</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Contact us</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-row">
+                <div class="footer-info">
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">Questions</li>
+                        <li class="footer-info__item"><a href="mailto:name@template.com" class="footer-info__link">Tweet
+                            us
+                            <strong>@template</strong></a></li>
+                    </ul>
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">Order by phone</li>
+                        <li class="footer-info__item"><a href="tel:88004094712"
+                                                         class="footer-info__link">8-800-409-47-12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <p class="footer-social__descr hidden-sm hidden-xs">We have our own delivery service which operates in 23 major European
+                        cities. Delivery time - 3-5
+                        days.</p>
+                    <ul class="b-copyright__list">
+                        <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Legal notice</a></li>
+                        <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Privacy policy </a></li>
+                        <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Site map</a></li>
+                    </ul>
+                    <ul class="soc-list">
+                        <li class="soc-list__item"><a href="#0" class="soc-list__link" title="Facebook">
+                            <svg class="soc-list__svg soc-list__svg--fb">
+                                <use xlink:href="img/svg-sprite.svg#facebook-logo"></use>
+                            </svg>
+                        </a></li>
+                        <li class="soc-list__item"><a href="#0" class="soc-list__link" title="Twitter">
+                            <svg class="soc-list__svg soc-list__svg--tw">
+                                <use xlink:href="img/svg-sprite.svg#twitter"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border"></div>
+    <div class="container">
+        <div class="b-copyright">
+            <p class="b-copyright__txt">© 2010–2015, The Template Group inc.</p>
+            <a href="#0" class="b-copyright__link">Share <span>1 437</span></a>
+            <ul class="b-copyright__list">
+                <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Legal notice</a></li>
+                <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Privacy policy </a></li>
+                <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Site map</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="js/shopping-bag.js"></script>
+</body>
+</html>

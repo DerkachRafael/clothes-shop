@@ -1,0 +1,200 @@
+//VARS
+$body-color: #000000;
+$accent: #f14a58;
+$wrap-product-bg: #f6f6f6;
+$border-color: #e5e5e5;
+$btn-sm--selected: #707070;
+$highlight-slide-bg: #f5de75;
+//NAV_BAR STYLE
+$bar-width: 14px;
+$bar-height: 2px;
+$bar-spacing: 5px;
+//MIXIN
+//PLACEHOLDER CROSSBROWSER
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+// HOVER EFFECTS
+@mixin onHoverLink {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  height: 1px;
+  background: #000000;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+//HOVER BG
+@mixin hoverBg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #000000;
+  content: "";
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  z-index: -1;
+}
+
+@mixin hoverCompleted {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+}
+
+@mixin bgLink {
+  background: #000000;
+  content: "";
+  position: absolute;
+  left: -6px;
+  bottom: -3px;
+  top: -2px;
+  right: -6px;
+  z-index: -1;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+// DISPLAY INLINE-BLOCK , hacks for old browser
+@mixin inline-block() {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+}
+
+@mixin vertical-align {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin range-slider($width, $height, $input-top, $input-bg-color, $input-thumb-color, $float:none, $input-height:3px, $input-border-radius:0px) {
+  position: relative;
+  width: $width;
+  height: $height;
+  text-align: center;
+
+  input[type="range"] {
+    pointer-events: none;
+    position: absolute;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    border: none;
+    background: $input-bg-color;
+    left: 0;
+    top: $input-top;
+    width: $width;
+    outline: none;
+    height: $input-height;
+    margin: 0;
+    padding: 0;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+    -webkit-appearance: none;
+    width: 3px;
+    height: 9px;
+    border: none;
+    border-radius: $input-border-radius;
+    background: red;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: $input-height;
+    height: $input-height;
+    border: none;
+    border-radius: $input-border-radius;
+    
+    
+  }
+
+  input[type="range"]::-ms-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -ms-appearance: none;
+    width: $input-height;
+    height: $input-height;
+    border-radius: $input-border-radius;
+    border: 0;
+  }
+
+  input[type=range]::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+  }
+
+  input[type=range]:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+  }
+
+  input[type=range]::-moz-focus-outer {
+    border: 0;
+  }
+}
+
+

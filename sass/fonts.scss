@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Futura PT';
+  src: url('../fonts/FuturaPt/subset-FuturaPT-Heavy.eot');
+  src: url('../fonts/FuturaPt/subset-FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FuturaPt/subset-FuturaPT-Heavy.woff2') format('woff2'),
+  url('../fonts/FuturaPt/subset-FuturaPT-Heavy.woff') format('woff'),
+  url('../fonts/FuturaPt/subset-FuturaPT-Heavy.ttf') format('truetype'),
+  url('../fonts/FuturaPt/subset-FuturaPT-Heavy.svg#FuturaPT-Heavy') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+  url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/Helvetica/HelveticaNeue.eot');
+  src: url('../fonts/Helvetica/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Helvetica/HelveticaNeue.woff') format('woff'),
+  url('../fonts/Helvetica/HelveticaNeue.ttf') format('truetype'),
+  url('../fonts/Helvetica/HelveticaNeue.svg#HelveticaNeue') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}

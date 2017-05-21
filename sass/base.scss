@@ -1,0 +1,263 @@
+@import "vars";
+@import "fonts";
+
+::selection {
+  background: $body-color;
+  color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &:after, &:before {
+    box-sizing: border-box;
+  }
+}
+
+a {
+  color: $body-color;
+  text-decoration: none;
+  @include inline-block;
+  &:hover {
+    text-decoration: none;
+  }
+  &:active, &:focus{
+    color: $accent;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  color: $body-color;
+  font-family: 'Futura PT', Arial, sans-serif;
+  overflow-x: hidden;
+  //display: flex;
+  //min-height: 100vh;
+  //or
+  //min-height: 100%;
+  //flex-direction: column;
+}
+.wrapper{
+  //flex: 1;
+}
+.container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title-section {
+  font-size: 60px;
+  margin-bottom: 99px;
+}
+
+.title-sm {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.product-item {
+  position: relative;
+  flex: 2;
+  max-width: 240px;
+  text-align: center;
+  background: #fff;
+  transition: .35s ease-in-out .3s;
+  &__img {
+    vertical-align: bottom;
+    max-width: 100%;
+    min-width: 157px;
+  }
+  &:hover{
+
+  }
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+    transition: .75s ease-in-out .3s;
+  }
+  &:before {
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    bottom: 0;
+    right: 0;
+  }
+  &:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    transform: scale(1.1);
+    z-index: 999;
+  }
+}
+
+.product-description {
+  font-family: "HelveticaNeue";
+  &__title {
+    margin-top: 43px;
+    margin-bottom: 9px;
+    padding: 0 25px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  &__price {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  span, em {
+    margin-right: 5px;
+    color: #757575;
+  }
+}
+
+.wrap-product-img {
+  position: relative;
+  background-color: $wrap-product-bg;
+  &__overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, .5);
+    .accent {
+      margin-bottom: 35px;
+      font-size: 22px;
+    }
+    .accent + a {
+      font-size: 22px;
+      color: #fff;
+    }
+  }
+  &:hover {
+    .wrap-product-img__overlay {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.btn-medium {
+  position: relative;
+  text-align: center;
+  max-width: 340px;
+  width: 100%;
+  border: 1px solid $border-color;
+  font-size: 26px;
+  margin: 80px 0;
+  padding: 26px 0;
+  background-color: #fff;
+  z-index: 2;
+  &:before {
+    @include hoverBg;
+  }
+  &:hover, &:active {
+    &:before {
+      @include hoverCompleted;
+    }
+  }
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.btn-sm {
+  position: relative;
+  color: $body-color;
+  background: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 25px 0;
+  max-width: 146px;
+  width: 100%;
+  border: 1px solid $border-color;
+  margin-right: 60px;
+  z-index: 2;
+  &:last-of-type {
+    margin-right: auto;
+  }
+  &:before {
+    @include hoverBg;
+    background-color: $btn-sm--selected;
+  }
+  &:hover, &:active {
+    &:before {
+      @include hoverCompleted;
+    }
+  }
+  &:hover {
+    color: #000000;;
+  }
+}
+
+.btn-sm--selected {
+  background-color: $btn-sm--selected;
+}
+
+.btn-dang {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.accent {
+  color: $accent;
+}
+.b-banners{
+  display: flex;
+  align-items: stretch;
+  font-size: 0;
+}
+button[disabled]{
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+.intro-link{
+  padding: 15px 0;
+  border-top: 1px solid $border-color;
+  a{
+    font-size: 18px;
+  }
+}

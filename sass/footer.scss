@@ -1,0 +1,223 @@
+@import "vars";
+
+.footer {
+  border-top: 1px solid $border-color;
+  padding-top: 57px;
+  .row {
+    justify-content: space-between;
+  }
+}
+
+.b-nav-footer {
+  &__list {
+    margin-top: 52px;
+  }
+  &__item {
+    margin-bottom: 25px;
+  }
+  &__link {
+    font-family: "HelveticaNeue";
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-transition: color 0.4s 0s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.4s 0s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s 0s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s 0s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    &:before {
+      @include bgLink;
+    }
+    &:hover {
+      color: #ffffff;
+      -webkit-transform: scale(1.12, 1.12);
+      -ms-transform: scale(1.12, 1.12);
+      transform: scale(1.12, 1.12);
+      &:before {
+        @include hoverCompleted;
+        transition-delay: 0.2s;
+      }
+    }
+  }
+}
+
+.footer-info {
+  display: flex;
+  margin-bottom: 80px;
+  &__list {
+    margin-right: 105px;
+  }
+  &__item {
+    &:first-child {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+  &__link {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.footer-social {
+  &__descr {
+    max-width: 299px;
+    width: 100%;
+    color: #757575;
+    font-family: Times;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+    margin-bottom: 45px;
+    .soc-list__svg--tw {
+      fill: $border-color;
+    }
+  }
+}
+
+.soc-list {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin-right: 25px;
+  }
+  &__svg {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  &__svg--fb {
+    position: relative;
+
+    width: 14px;
+    height: 28px;
+    fill: #315295;
+  }
+  &__svg--tw {
+    width: 26px;
+    height: 16px;
+    fill: #4bb8f0;
+  }
+}
+
+.border {
+  height: 1px;
+  background: $border-color;
+}
+
+.b-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  &__txt {
+    font-family: "HelveticaNeue";
+    font-size: 12px;
+    font-weight: 700;
+  }
+  &__link {
+    font-size: 18px;
+    font-weight: 700;
+    span {
+      margin-left: 8px;
+      position: relative;
+      @include inline-block;
+      padding: 4px 8px;
+      background-color: #f4f4f4;
+      font-family: "HelveticaNeue";
+      font-size: 12px;
+      font-weight: 400;
+      &:before {
+        content: " ";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 5px solid transparent;
+        border-right: 5px solid #f4f4f4;
+      }
+    }
+  }
+  &__item {
+    @include inline-block;
+    margin-right: 37px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer-social {
+  .b-copyright__list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .row {
+    flex-wrap: wrap;
+  }
+  .b-nav-footer__list {
+
+  }
+  .footer-row {
+    width: 100%;
+  }
+  .footer-info {
+    justify-content: space-between;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    margin: 0 -15px 0 -15px;
+    &__list {
+      padding: 15px;
+      margin-right: 0;
+      flex: 2;
+      &:first-of-type {
+        border-right: 1px solid $border-color;
+      }
+    }
+    &__svg {
+
+    }
+    .footer-info-fb{
+      display: none;
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    .b-copyright__list {
+      display: block;
+    }
+    .b-copyright__link {
+      font-size: 16px;
+    }
+    .b-copyright__item {
+      margin-right: 4px;
+    }
+  }
+  .soc-list {
+    justify-content: flex-end;
+  }
+  .b-copyright {
+    &__list {
+      display: none;
+    }
+  }
+
+}
+
+.footer-info__list + .footer-info__list {
+  //padding-left: 15px;
+}
+.footer-info-fb{
+  width: 26px;
+  height: 16px;
+  fill: #d7d7d7;
+  position: absolute;
+  left: -30px;
+  top: 3px;
+}

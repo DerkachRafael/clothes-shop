@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CatalogPage</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+
+<body class="start-body">
+<header class="header">
+    <div class="container">
+        <div class="top-panel">
+            <div class="logo">
+                <a href="index.html" class="logo__link" title="Template">T<span>emp</span>l<span>ate</span></a>
+            </div>
+            <ul class="login-list">
+                <li class="login-list__item hidden-xs"><a class="login-list__link " href="#0">E-mail</a></li>
+                <li class="login-list__item hidden-xs"><a class="login-list__link " href="#0">sing up</a></li>
+                <li class="login-list__item"><a class="login-list__link" href="shopping-bag.html">
+                    <svg class="login-list__svg">
+                        <use xlink:href="img/svg-sprite.svg#shopping-purse-icon"></use>
+                    </svg>
+                    Bag</a>
+                </li>
+            </ul>
+            <div class="nav-btn visible-xs js-nav-btn">
+                <div class="nav-btn__bar"></div>
+            </div>
+            <!--NAV-->
+            <nav class="nav">
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__link">Women</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Men</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Handbags</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Accessories</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Sale</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">New Arrivals</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Clearance</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Store Locator</a></li>
+                </ul>
+                <form class="search-form" action="#0">
+                    <input class="search-form__input" placeholder="Style name"/>
+                    <button class="search-form__button" type="button"><img src="img/search-btn.svg" alt="alt"></button>
+                </form>
+            </nav>
+        </div>
+        </div>
+    <ul class="menu-list">
+        <li class="menu-list__item menu-list__item--bg"><a href="#0" class="menu-list__link menu-list__link--sm"> <span class="hidden-xs hidden-sm">Fashion </span>
+            <span class="accent">Casual style</span></a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem1 </a></li>
+            <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem1 </a></li>
+            <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem1 </a></li>
+            <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem1 </a></li>
+        </ul>
+        </li>
+        <li class="menu-list__item"><a href="#0" class="menu-list__link">Product type </a></li>
+        <li class="menu-list__item"><a href="#0" class="menu-list__link">Color</a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem2 </a></li>
+                <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem3 </a></li>
+                <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem4 </a></li>
+                <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem5 </a></li>
+            </ul></li>
+        <li class="menu-list__item menu-list__item--bg"><a href="#0"
+                                                           class="menu-list__link menu-list__link--sm"><span class="hidden-xs hidden-sm">Brand</span><span
+                class="accent">Antipodium</span></a></li>
+        <li class="menu-list__item menu-list__item--bg"><a href="#0" class="menu-list__link menu-list__link--sm"> <span class="hidden-xs hidden-sm">Size </span>
+            <span class="accent">UK 18</span></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem1 </a></li>
+                <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem1 </a></li>
+                <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem1 </a></li>
+                <li class="dropdown-menu__item"><a href="#0" class="dropdown-menu__link"> Lorem1 </a></li>
+            </ul></li>
+        <li class="menu-list__item"><a href="#0" class="menu-list__link">Price range</a>
+            <div class="dropdown-menu">
+        <div class="menu-list__range">
+            <span class="rangeValues"></span>
+            <input class="js-range-price" value="12" min="12" max="1000" step="1" type="range">
+            <input class="js-range-price" value="650" min="12" max="1000" step="1" type="range">
+        </div>
+        </div>
+        
+        </li>
+    </ul>
+</header>
+<!--MAIN CONTENT-->
+<main class="wrapper">
+
+    <section class="b-product">
+        <div class="container row">
+            <figure class="product-item">
+                <div class="wrap-product-img"><img class="product-item__img" src="img/img10.png" alt="alt" width="240"
+                                                   height="340">
+                    <div class="wrap-product-img__overlay">
+                        <a href="item.html" class="accent">Quick view</a>
+                        <a href="item.html" class="">More photos</a>
+                    </div>
+                </div>
+
+                <figcaption class="product-description">
+                    <h5 class="product-description__title">Only Skinny Jeans</h5>
+                    <p class="product-description__price">£65.50</p>
+                </figcaption>
+            </figure>
+            <figure class="product-item">
+                <div class="wrap-product-img"><img class="product-item__img" src="img/img4.png" alt="alt" width="240"
+                                                   height="340">
+                    <div class="wrap-product-img__overlay">
+                        <a href="item.html" class="accent">Quick view</a>
+                        <a href="item.html" class="">More photos</a>
+                    </div>
+                </div>
+                <figcaption class="product-description">
+                    <h5 class="product-description__title">Neck Knitted Jumper</h5>
+                    <p class="product-description__price">£76.25</p>
+                </figcaption>
+            </figure>
+            <figure class="product-item hidden-xs">
+                <div class="wrap-product-img"><img class="product-item__img" src="img/img1.png" alt="alt" width="240"
+                                                   height="340">
+                    <div class="wrap-product-img__overlay">
+                        <a href="item.html" class="accent">Quick view</a>
+                        <a href="item.html" class="">More photos</a>
+                    </div>
+                </div>
+                <figcaption class="product-description">
+                    <h5 class="product-description__title">Turtle Neck Jumper in Rib</h5>
+                    <p class="product-description__price">£130.25 <em>New</em></p>
+                </figcaption>
+            </figure>
+            <figure class="product-item hidden-xs hidden-sm">
+                <div class="wrap-product-img"><img class="product-item__img" src="img/img4.png" alt="alt" width="240"
+                                                   height="340">
+                    <div class="wrap-product-img__overlay">
+                        <a href="item.html" class="accent">Quick view</a>
+                        <a href="item.html" class="">More photos</a>
+                    </div>
+                </div>
+
+                <figcaption class="product-description">
+                    <h5 class="product-description__title">With Patchwork Crochet</h5>
+                    <p class="product-description__price">£80.60</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="descr-sale">
+            <h3 class="title-medium text-center">Last weekend <strong class="accent">extra 50%</strong>off on all
+                reduced
+                boots and
+                shoulder bags</h3>
+            <p class="subtitle-sale text-center">This offer is valid in-store and online. Prices displayed reflect this
+                additional
+                discount. This offer ends
+                at 11:59 GMT on March 1st 2015</p>
+        </div>
+        <div class="container">
+            <div class="wrap-items row">
+                <figure class="product-item">
+                    <div class="wrap-product-img"><img class="product-item__img" src="img/img6.png" alt="alt"
+                                                       width="240" height="340">
+                        <div class="wrap-product-img__overlay">
+                            <a href="item.html" class="accent">Quick view</a>
+                            <a href="item.html" class="">More photos</a>
+                        </div>
+                    </div>
+                    <figcaption class="product-description">
+                        <h5 class="product-description__title">Levi’s Jeans for women</h5>
+                        <p class="product-description__price">More colours</p>
+                    </figcaption>
+                </figure>
+                <figure class="product-item">
+                    <div class="wrap-product-img"><img class="product-item__img" src="img/img12.png" alt="alt"
+                                                       width="240" height="340">
+                        <div class="wrap-product-img__overlay">
+                            <a href="item.html" class="accent">Quick view</a>
+                            <a href="item.html" class="">More photos</a>
+                        </div>
+                    </div>
+                    <figcaption class="product-description">
+                        <h5 class="product-description__title">Boyfriend T-Shirt with
+                            Bohemian Print</h5>
+                        <p class="product-description__price"><span>£120.00 <em>-25%</em></span>£90.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="product-item hidden-xs">
+                    <div class="wrap-product-img"><img class="product-item__img" src="img/img13.png" alt="alt"
+                                                       width="240" height="340">
+                        <div class="wrap-product-img__overlay">
+                            <a href="item.html" class="accent">Quick view</a>
+                            <a href="item.html" class="">More photos</a>
+                        </div>
+                    </div>
+                    <figcaption class="product-description">
+                        <h5 class="product-description__title">Colour Block</h5>
+                        <p class="product-description__price">£550.50</p>
+                    </figcaption>
+                </figure>
+                <figure class="product-item hidden-xs hidden-sm">
+                    <div class="wrap-product-img"><img class="product-item__img" src="img/img5.png" alt="alt"
+                                                       width="240" height="340">
+                        <div class="wrap-product-img__overlay">
+                            <a href="item.html" class="accent">Quick view</a>
+                            <a href="item.html" class="">More photos</a>
+                        </div>
+                    </div>
+                    <figcaption class="product-description">
+                        <h5 class="product-description__title">Monki Festval Knitted</h5>
+                        <p class="product-description__price">£24.75</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <!--2-->
+            <div class="row">
+                <figure class="product-item">
+                    <div class="wrap-product-img"><img class="product-item__img" src="img/img3.png" alt="alt"
+                                                       width="240" height="340">
+                        <div class="wrap-product-img__overlay">
+                            <a href="item.html" class="accent">Quick view</a>
+                            <a href="item.html" class="">More photos</a>
+                        </div>
+                    </div>
+                    <figcaption class="product-description">
+                        <h5 class="product-description__title">Oversized Cardigan</h5>
+                        <p class="product-description__price">£90.00</p>
+                    </figcaption>
+                </figure>
+                <figure class="product-item">
+                    <div class="wrap-product-img"><img class="product-item__img" src="img/img11.png" alt="alt"
+                                                       width="240" height="340">
+                        <div class="wrap-product-img__overlay">
+                            <a href="item.html" class="accent">Quick view</a>
+                            <a href="item.html" class="">More photos</a>
+                        </div>
+                    </div>
+                    <figcaption class="product-description">
+                        <h5 class="product-description__title">Paul & Joe Sister Jumper
+                            with Neon Trims</h5>
+                        <p class="product-description__price">£19.75 <em>New</em></p>
+                    </figcaption>
+                </figure>
+                <figure class="product-item hidden-xs">
+                    <div class="wrap-product-img"><img class="product-item__img" src="img/img8.png" alt="alt"
+                                                       width="240" height="340">
+                        <div class="wrap-product-img__overlay">
+                            <a href="item.html" class="accent">Quick view</a>
+                            <a href="item.html" class="">More photos</a>
+                        </div>
+                    </div>
+                    <figcaption class="product-description">
+                        <h5 class="product-description__title">Only Busted Knee Jean</h5>
+                        <p class="product-description__price">£140.50</p>
+                    </figcaption>
+                </figure>
+                <figure class="product-item hidden-xs hidden-sm">
+                    <div class="wrap-product-img"><img class="product-item__img" src="img/img7.png" alt="alt"
+                                                       width="240" height="340">
+                        <div class="wrap-product-img__overlay">
+                            <a href="item.html" class="accent">Quick view</a>
+                            <a href="item.html" class="">More photos</a>
+                        </div>
+                    </div>
+                    <figcaption class="product-description">
+                        <h5 class="product-description__title">Boyfriend T-Shirt with
+                            Bohemian Print</h5>
+                        <p class="product-description__price">£85.75</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="item.html" class="btn-medium">Show more</a>
+        </div>
+    </section>
+    <section class="b-banners">
+        <a href="item.html" class="link-banner link-banner--lg">
+            <figure class="b-banners-item">
+                <img class="img-responsive" src="img/banner-50.png" alt="alt" width="384px"
+                     height="251px">
+                <figcaption class="link-banner__descr">
+                    <p class="banners-title">Adidas Blue</p>
+                    <em>For men</em>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="item.html" class="link-banner link-banner--md text-center hidden-xs">
+            <figure class="b-banners-item">
+                <div class="wrap-product-img"><img src="img/banner-catalog2.png" alt="alt" width="" height="384px">
+                </div>
+                <figcaption class="link-banner__descr">
+                    <p class="banners-title">Repair Patches</p>
+                    <p>£ 150.50</p>
+                </figcaption>
+            </figure>
+        </a>
+        <a href="item.html" class="link-banner link-banner--md text-center hidden-sm">
+            <figure class="b-banners-item sale-figure">
+                <img src="img/banner-catalog3.png" alt="alt">
+                <figcaption class="sale-caption">
+                    <p class="accent">Sale</p>
+                    <em>-70%</em>
+                </figcaption>
+            </figure>
+        </a>
+    </section>
+</main>
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content row">
+            <div class="b-nav-footer">
+                <h4 class="title-sm">Quick Links</h4>
+                <ul class="b-nav-footer__list">
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Store locator</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Gift cards</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Size guide</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">About us</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Support</a></li>
+                </ul>
+            </div>
+            <div class="b-nav-footer">
+                <h4 class="title-sm">Customer Care</h4>
+                <ul class="b-nav-footer__list">
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Customer service</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Track my order</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Return policy</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Shipping & delivery</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Contact us</a></li>
+                    <li class="b-nav-footer__item"><a href="#0" class="b-nav-footer__link">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-row">
+                <div class="footer-info">
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">Questions</li>
+                        <li class="footer-info__item"><a href="mailto:name@template.com" class="footer-info__link">Tweet
+                            us
+                            <strong>@template</strong></a></li>
+                    </ul>
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">Order by phone</li>
+                        <li class="footer-info__item"><a href="tel:88004094712"
+                                                         class="footer-info__link">8-800-409-47-12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <p class="footer-social__descr hidden-xs hidden-sm">We have our own delivery service which operates
+                        in 23 major European
+                        cities. Delivery time - 3-5
+                        days.</p>
+                    <ul class="b-copyright__list">
+                        <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Legal notice</a></li>
+                        <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Privacy policy </a></li>
+                        <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Site map</a></li>
+                    </ul>
+                    <ul class="soc-list">
+                        <li class="soc-list__item"><a href="#0" class="soc-list__link" title="Facebook">
+                            <svg class="soc-list__svg soc-list__svg--fb">
+                                <use xlink:href="img/svg-sprite.svg#facebook-logo"></use>
+                            </svg>
+                        </a></li>
+                        <li class="soc-list__item"><a href="#0" class="soc-list__link" title="Twitter">
+                            <svg class="soc-list__svg soc-list__svg--tw">
+                                <use xlink:href="img/svg-sprite.svg#twitter"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border"></div>
+    <div class="container">
+        <div class="b-copyright">
+            <p class="b-copyright__txt">© 2010–2015, The Template Group inc.</p>
+            <a href="#0" class="b-copyright__link">Share <span>1 437</span></a>
+            <ul class="b-copyright__list">
+                <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Legal notice</a></li>
+                <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Privacy policy </a></li>
+                <li class="b-copyright__item"><a href="#0" class="b-copyright__link">Site map</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="js/catalog.js"></script>
+
+</body>
+</html>
